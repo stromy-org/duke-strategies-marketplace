@@ -1,0 +1,16 @@
+{
+  "name": "duke-strategies-marketplace",
+  "owner": {
+    "name": "stromy-org"
+  },
+  "plugins": [
+    {
+      "name": "duke-strategies",
+      "description": "Claude Code plugin for Duke Strategies branded deliverables",
+      "source": {
+        "source": "github",
+        "repo": "stromy-org/duke-strategies-plugin"
+      }
+    }
+  ]
+}
