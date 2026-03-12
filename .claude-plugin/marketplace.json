@@ -1,5 +1,7 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "duke-strategies-marketplace",
+  "description": "Plugin marketplace for Duke Strategies branded deliverables",
   "owner": {
     "name": "stromy-org"
   },
@@ -7,9 +9,13 @@
     {
       "name": "duke-strategies",
       "description": "Claude Code plugin for Duke Strategies branded deliverables",
+      "version": "0.1.0",
+      "author": {
+        "name": "stromy-org"
+      },
       "source": {
-        "source": "github",
-        "repo": "stromy-org/duke-strategies-plugin"
+        "source": "url",
+        "url": "https://github.com/stromy-org/duke-strategies-plugin.git"
       }
     }
   ]
