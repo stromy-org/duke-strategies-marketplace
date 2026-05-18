@@ -1,0 +1,11 @@
+# Changes here will be overwritten by Copier; DO NOT edit manually.
+_commit: 37056c3
+_src_path: gh:stromy-org/claude-marketplace-template
+author_name: William Masquelier
+client_name: Duke Strategies
+client_slug: duke-strategies
+github_org: stromy-org
+marketplace_name: Duke Strategies Plugin Marketplace
+marketplace_slug: duke-strategies-marketplace
+plugin_description: Claude Code plugin for Duke Strategies branded deliverables
+plugin_slug: duke-strategies-plugin
