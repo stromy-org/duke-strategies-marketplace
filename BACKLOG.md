@@ -12,7 +12,7 @@ _No items currently in progress._
 
 ---
 
-## Todo
+## Queue
 
 <!--
 ### [DSMK-NNN] <Title in imperative mood>
