@@ -6,15 +6,16 @@ Public marketplace for Duke Strategies Claude Code plugins.
 
 | Requirement | Version | Why |
 |-------------|---------|-----|
-| Claude Code | v2.1.49+ | Plugin runtime (CLI or Desktop Code tab) |
+| Claude account with plugin access | — | Cowork / Claude for Work / Team (desktop or web), or Claude Code v2.1.49+ |
 
 ## Installation
 
-### Option A: From the Cowork Desktop UI
+### Option A: In the Claude app (Cowork, Claude for Work / Team)
 
-1. Open **Customize** → **Browse plugins** → **Personal** tab
-2. Click the `+` to add a marketplace → enter `stromy-org/duke-strategies-marketplace`
-3. Click **Duke Strategies** → Install
+1. Open **Settings → Plugins** (or **Connectors & plugins**)
+2. **Add marketplace** → enter `stromy-org/duke-strategies-marketplace`
+3. Click **Duke Strategies** → **Install**
+4. Switch on the **stromy-format** and **nl-gov-data** connectors under **Settings → Connectors**, then say `/duke-strategies:getting-started` in a chat
 
 ### Option B: From the CLI
 
@@ -23,13 +24,13 @@ Public marketplace for Duke Strategies Claude Code plugins.
 claude plugin marketplace add stromy-org/duke-strategies-marketplace
 
 # Install plugin
-claude plugin install duke-strategies-plugin@duke-strategies-marketplace
+claude plugin install duke-strategies@duke-strategies-marketplace
 ```
 
 ### Post-install: dependencies (one-time)
 
 ```bash
-cd ~/.claude/plugins/cache/duke-strategies-marketplace/duke-strategies-plugin/0.1.0
+cd ~/.claude/plugins/cache/duke-strategies-marketplace/duke-strategies/<version>
 npm install   # if the plugin has Node dependencies
 uv sync       # if the plugin has Python dependencies
 ```
@@ -38,21 +39,18 @@ uv sync       # if the plugin has Python dependencies
 
 | Interface | Skills available? | Notes |
 |-----------|:-:|-------|
+| **Claude app — Cowork, Claude for Work / Team** | Yes | Install via **Settings → Plugins**; connectors via **Settings → Connectors** |
 | **Claude Code CLI** | Yes | Terminal — full plugin support |
-| **Desktop app — Code tab** | Yes | Same runtime as CLI |
-| **Desktop app — Cowork tab** | Pending | Cowork plugin loading for marketplace plugins is a known limitation |
+| **Claude desktop — Code tab** | Yes | Same runtime as the CLI |
 
 ## Available skills
 
-<!-- Update this table after adding skills to the plugin -->
-| Skill | Command |
-|-------|---------|
-| _example_ | `/duke-strategies-plugin:example` |
+The plugin ships 41 skills, invoked as `/duke-strategies:<skill>` — the full table with one-line descriptions is in the [plugin README](https://github.com/stromy-org/duke-strategies-plugin#skills). Start with `/duke-strategies:getting-started`.
 
 ## Updating
 
 ```bash
-claude plugin update duke-strategies-plugin@duke-strategies-marketplace
+claude plugin update duke-strategies@duke-strategies-marketplace
 ```
 
 ## Troubleshooting
@@ -61,7 +59,7 @@ claude plugin update duke-strategies-plugin@duke-strategies-marketplace
 |---------|-----|
 | "Failed to install plugin" with `Permission denied (publickey)` | Confirm the plugin entry uses an explicit `https://...git` URL, not the `github` shorthand |
 | Other "Failed to install plugin" errors | Check `~/Library/Logs/Claude/main.log`; then try CLI install (Option B) |
-| Skills don't appear | Start a new session; ensure you're in the **Code** tab |
+| Skills don't appear | Start a new chat; in the Claude app check **Settings → Plugins** shows the plugin as installed |
 | Dependency errors on first use | Run `npm install && uv sync` in the plugin cache dir |
 | "Plugin not found in marketplace" | Run `claude plugin marketplace add stromy-org/duke-strategies-marketplace` first |
 
