@@ -9,7 +9,7 @@
     {
       "name": "duke-strategies",
       "description": "Claude Code plugin for Duke Strategies branded deliverables",
-      "version": "0.5.31",
+      "version": "0.5.32",
       "author": {
         "name": "stromy-org"
       },
