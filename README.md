@@ -10,12 +10,20 @@ Public marketplace for Duke Strategies Claude Code plugins.
 
 ## Installation
 
+<<<<<<< before updating
 ### Option A: In the Claude app (Cowork, Claude for Work / Team)
+=======
+### Option A: In Claude (desktop or web — Cowork, Claude for Work / Team)
+>>>>>>> after updating
 
 1. Open **Settings → Plugins** (or **Connectors & plugins**)
 2. **Add marketplace** → enter `stromy-org/duke-strategies-marketplace`
 3. Click **Duke Strategies** → **Install**
+<<<<<<< before updating
 4. Switch on the **stromy-format** and **nl-gov-data** connectors under **Settings → Connectors**, then say `/duke-strategies:getting-started` in a chat
+=======
+4. In **Settings → Connectors**, switch on the connectors the plugin declares in its `.mcp.json`
+>>>>>>> after updating
 
 ### Option B: From the CLI
 
@@ -30,7 +38,11 @@ claude plugin install duke-strategies@duke-strategies-marketplace
 ### Post-install: dependencies (one-time)
 
 ```bash
+<<<<<<< before updating
 cd ~/.claude/plugins/cache/duke-strategies-marketplace/duke-strategies/<version>
+=======
+cd ~/.claude/plugins/cache/duke-strategies-marketplace/duke-strategies-plugin/<version>
+>>>>>>> after updating
 npm install   # if the plugin has Node dependencies
 uv sync       # if the plugin has Python dependencies
 ```
@@ -39,9 +51,15 @@ uv sync       # if the plugin has Python dependencies
 
 | Interface | Skills available? | Notes |
 |-----------|:-:|-------|
+<<<<<<< before updating
 | **Claude app — Cowork, Claude for Work / Team** | Yes | Install via **Settings → Plugins**; connectors via **Settings → Connectors** |
 | **Claude Code CLI** | Yes | Terminal — full plugin support |
 | **Claude desktop — Code tab** | Yes | Same runtime as the CLI |
+=======
+| **Claude desktop / web — Cowork, Claude for Work** | Yes | Install via **Settings → Plugins**; connectors via **Settings → Connectors** |
+| **Claude Code CLI** | Yes | Terminal — full plugin support |
+| **Desktop app — Code tab** | Yes | Same runtime as CLI |
+>>>>>>> after updating
 
 ## Available skills
 
