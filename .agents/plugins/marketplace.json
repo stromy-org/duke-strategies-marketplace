@@ -1,0 +1,19 @@
+{
+  "name": "duke-strategies-marketplace",
+  "interface": {
+    "displayName": "Duke Strategies"
+  },
+  "plugins": [
+    {
+      "name": "duke-strategies",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/stromy-org/duke-strategies-plugin.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      }
+    }
+  ]
+}
