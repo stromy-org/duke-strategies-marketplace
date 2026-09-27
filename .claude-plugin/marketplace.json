@@ -8,8 +8,8 @@
   "plugins": [
     {
       "name": "duke-strategies",
-      "description": "Claude Code plugin for Duke Strategies branded deliverables",
-      "version": "0.5.45",
+      "description": "Plugin for Duke Strategies branded deliverables",
+      "version": "0.5.46",
       "author": {
         "name": "stromy-org"
       },
